@@ -1,10 +1,14 @@
+import { Container, Table } from "react-bootstrap"
+
 function Products(){
     return(
-        <table>
+    <Container className="py-4 px-3 mx-auto">
+        <Table striped bordered hover>
             <thead>
                 <tr>
                     <th>#</th>
                     <th>Product Name</th>
+                    <th>Product Type</th>
                     <th>Cost</th>
                 </tr>
             </thead>
@@ -19,17 +23,17 @@ function Products(){
                     <td>2</td>
                     <td>Pineapple</td>
                     <td>Fruit</td>
-                    <td>4.50</td>
+                    <td>3.25</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Cucummber</td>
-                    <td>Vegitable</td>
-                    <td>5400</td>
+                    <td>Cucumber</td>
+                    <td>Vegetable</td>
+                    <td>.50</td>
                 </tr>
             </tbody>
-
-        </table>
+        </Table>
+    </Container>
     )
 }
 
